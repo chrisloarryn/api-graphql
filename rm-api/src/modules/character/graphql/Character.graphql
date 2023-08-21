@@ -1,0 +1,27 @@
+type NameUrl {
+  name: String
+  url: String
+}
+
+type Character {
+  # id number
+  id: Int
+  name: String
+  status: String
+  species: String
+  type: String
+  gender: String
+  origin: NameUrl
+  location: NameUrl
+  image: String
+  episode: [String]
+  url: String
+  created: String
+
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type Query {
+  characters(page: Int = 1): [Character!]!
+}
