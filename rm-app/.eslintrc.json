@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  // disable rule no-namespace and no-explicit-any
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/no-explicit-any": "off" 
+
+  }
+}
